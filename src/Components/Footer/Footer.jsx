@@ -7,6 +7,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from '../../assets/SREIT_LOGO.png';
+
 
 const Footer = () => {
   return (
@@ -19,12 +21,13 @@ const Footer = () => {
           {/* logo div */}
           <div className=" w-full px-4 sm:w-2/3 lg:w-3/12 ">
             <div className="mb-10 w-full  flex flex-col items-center">
-              <a href="/#" className="mb-6 inline-block max-w-[110px] ">
-                <img
+              <a href="/#" className="mb-6 inline-block max-w-[140px] ">
+              <img src={logo} alt="logo" className="max-w-full " />
+                {/* <img
                   src="https://i.ibb.co/tP79HPK/SMIt-Solution-Logo-removebg-preview.png"
                   alt="logo"
-                  className="max-w-full"
-                />
+                  className="max-w-full "
+                /> */}
                 {/* <img
       src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
       alt="logo"
@@ -83,7 +86,7 @@ const Footer = () => {
                   Properties Road 1, Chittagong, Bangladesh.
                 </p>
                 <p className="flex  gap-x-2 mt-2">
-                  <SlLocationPin className="text-lg"></SlLocationPin> Al Muteena St, Dubai, UAE.
+                  {/* <SlLocationPin className="text-lg"></SlLocationPin> Al Muteena St, Dubai, UAE. */}
                   {/* <span>House - NE(B) 2/1, Road- 71, Gulshan-02, Dhaka, Bangladesh.</span>  */}
 
                 </p>

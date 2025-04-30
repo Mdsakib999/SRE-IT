@@ -15,10 +15,10 @@ const CountItem = ({ end, label }) => (
 
 const CountIngDiv = () => {
   const counts = [
-    { end: 50, label: "Happy Clients" },
-    { end: 15, label: "Finished Projects" },
-    { end: 14, label: "Team Members" },
-    { end: 3, label: "Years Of Experience" },
+    { end: 20, label: "Happy Clients" },
+    { end: 99, label: "Finished Projects" },
+    { end: 5, label: "Team Members" },
+    { end: 1, label: "Years Of Experience" },
   ];
 
   return (

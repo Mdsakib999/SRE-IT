@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link, NavLink } from 'react-router-dom';
 import { IoIosArrowDown } from "react-icons/io";
-import logo from '../../assets/SMIT_LOGO.png';
+import logo from '../../assets/SREIT_LOGO.png';
 import { navData } from '../../utils/navData';
 
 
@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='   flex justify-between items-center h-20 max-w-7xl 2xl:max-w-[90%] mx-auto px-4 text-black '>
                 {/* Logo */}
                 <Link to="/" className='flex justify-center items-center gap-2'>
-                    <img src={logo} alt="logo-img" className='size-10  rounded-full' />
+                    <img src={logo} alt="logo-img" className='size-12  rounded-full' />
                     <p className='font-manrope font-extrabold leading-snug text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-600 to-amber-400 font-Dancing'>SRE IT SOLUTION</p>
                 </Link>
 
