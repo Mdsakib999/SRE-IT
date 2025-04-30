@@ -3,16 +3,18 @@ import { services } from "../../utils/service";
 import { useEffect } from "react";
 import useDocumentTitle from "../../Hooks/useDocumentTitle";
 import { FaChevronRight } from "react-icons/fa";
+import PricingCards from "../../Components/PricingCard";
+
 const ServiceDetails = () => {
-  const { title } = useParams(); // Assuming you are using React Router for navigation
+  const { title } = useParams();
   useDocumentTitle(`Service | SM IT Solution | ${title}`);
   const plainTitle = title.split("-").join(" ");
   const service = services.find(
     (service) => service.title.toLowerCase() == plainTitle.toLowerCase()
   );
-    useEffect(() => {
-      window.scrollTo({ top: 0 });
-    }, []);
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   if (!service) {
     return <p>Service not found.</p>;
   }
@@ -25,54 +27,7 @@ const ServiceDetails = () => {
       <div className="mx-auto p-8">
         {/* Service Overview */}
 
-        <div className="flex items-center justify-center mb-8">
-          <service.logo className="text-orange-400 text-5xl mr-4" />
-          <p className="text-xl md:text-3xl lg:text-4xl font-semibold text-gray-800 ">
-            {service.title}
-          </p>
-        </div>
-        <p className="text-lg md:text-xl lg:text-xl text-gray-600 mb-6 leading-relaxed tracking-wide text-center lg:w-[50%] mx-auto">
-          {service.description}
-        </p>
-        <p className="text-base text-gray-700 leading-relaxed mb-8 lg:w-[80%] text-center lg:text-xl mx-auto">
-          {service.details}
-        </p>
-        {/* Gradient */}
-        <div className="relative">
-          {/* Orange Gradient */}
-          <div className="background-gradient w-[30vw] h-[30vw] max-w-[400px] max-h-[400px] absolute top-[30%] right-[20%] md:top-[20%] md:right-[15%] lg:top-[25%] lg:right-[20%] rounded-full -z-10 inset-7"></div>
-
-          {/* Blue Gradient 1 */}
-          <div className="background-gradient-blue w-[40vw] h-[40vw] max-w-[380px] max-h-[380px] absolute top-[40%] left-[30%] md:top-[30%] md:left-[25%] lg:top-[35%] lg:left-[30%] rounded-full -z-10"></div>
-
-          {/* Blue Gradient 2 */}
-          <div className="background-gradient-blue w-[40vw] h-[40vw] max-w-[380px] max-h-[380px] absolute top-[45%] left-[10%] md:top-[35%] md:left-[5%] lg:top-[40%] lg:left-[10%] rounded-full -z-10"></div>
-        </div>
-        {/* Key Features Section */}
-        <div className=" mt-8 lg:mt-16 mb-12 flex justify-between content-center">
-          <div>
-            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-6">
-              Key Features
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {service.features.map((feature, index) => {
-                const [title, description] = feature.split(": ");
-                return (
-                  <div
-                    key={index}
-                    className="bg-white/60 backdrop-blur-md shadow-sm p-4 rounded-lg border  hover:border-gray-400 transition-shadow duration-300"
-                  >
-                    <h3 className="text-lg font-semibold mb-5 mt-5 text-orange-600  flex items-center justify-start  -ml-2">
-                      <FaChevronRight className="w-8 " />
-                      {title}
-                    </h3>
-                    <p className="text-gray-700 pb-2 ps-2">{description}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <PricingCards />
 
         {/* Related Services Section */}
         <div className="mb-12 ">
