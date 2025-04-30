@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "name": "Shariar Rahaman",
+        "designation": "Founder & CEO",
+        "Image": "https://i.ibb.co.com/P47jXG0/shariar-Rahaman.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/shariar-rahman/",
+        "twiterLink": "https://twitter.com/"
+    },
+    {
+        "id": 2,
+        "name": "Tariqul Hayat Shuvo",
+        "designation": "Senior Executive",
+        "Image": "https://i.ibb.co.com/yWtk48N/Tariqul.jpg ",
+        "linkedinLink": "https://www.linkedin.com/in/",
+        "twiterLink": "https://twitter.com/"
+    },
+    {
+        "id": 3,
+        "name": "Abdul Nur Tushar",
+        "designation": "Tech Team Lead",
+        "Image": "https://i.ibb.co.com/sHZjM3c/Tushar.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/",
+        "twiterLink": "https://twitter.com/"
+    },
+    {
+        "id": 4,
+        "name": "MD Sakib",
+        "designation": "Software Engineer",
+        "Image": "https://i.ibb.co.com/gF7hqPf/3sakib.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/sakib999",
+        "twiterLink": "https://twitter.com/sakibabrar999"
+    },
+    {
+        "id": 5,
+        "name": "Tamim Khan",
+        "designation": "Senior Executive",
+        "Image": "https://i.ibb.co.com/sPFD1Wt/Tamim-Khan.jpg",
+        "linkedinLink": "https://www.linkedin.com/",
+        "twiterLink": "https://twitter.com/"
+    },
+    {
+        "id": 6,
+        "name": "Saiful Alam",
+        "designation": "Graphic Designer",
+        "Image": "https://i.ibb.co.com/PFc62Ws/Saiful.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/saifulalam1321",
+        "twiterLink": "https://x.com/saifulalam1321"
+    },
+    {
+        "id": 7,
+        "name": "Jafor Ahmmed",
+        "designation": "Digital Marketing Executive",
+        "Image": "https://i.ibb.co.com/PWvw03S/Jafor.jpg",
+        "linkedinLink": "https://www.linkedin.com/in/jahmmed/",
+        "twiterLink": "#"
+    },
+    {
+        "id": 8,
+        "name": "Ripon Barua",
+        "designation": "Junior Executive",
+        "Image": "https://i.ibb.co.com/MhnCm8h/Ripon.jpg",
+        "linkedinLink": "https://www.linkedin.com/",
+        "twiterLink": "#"
+    },
+    {
+        "id": 9,
+        "name": "MD Kawsar Ahmed",
+        "designation": "Junior Executive",
+        "Image": "https://i.ibb.co.com/0yWCtVT/Kawsar.jpg ",
+        "linkedinLink": "https://www.linkedin.com/in/kawsar-ahmed-shawon-6bb609294",
+        "twiterLink": "#"
+    },
+
+    {
+        "id": 10,
+        "name": "Arpita Devi",
+        "designation": "Senior Designer",
+        "Image": "https://cdn-icons-png.flaticon.com/512/4441/4441034.png",
+        "linkedinLink": "https://www.linkedin.com/",
+        "twiterLink": "#"
+    },
+    {
+        "id": 11,
+        "name": "Sadika Rahman",
+        "designation": "Junior Web Developer",
+        "Image": "https://cdn-icons-png.flaticon.com/512/4441/4441034.png",
+        "linkedinLink": "https://www.linkedin.com/in/sadika-rahman/",
+        "twiterLink": "https://x.com/sadikatanisha"
+    }
+]

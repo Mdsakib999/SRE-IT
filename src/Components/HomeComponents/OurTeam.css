@@ -1,0 +1,7 @@
+.home-special .swiper-pagination-bullet {
+    background-color: #ff0000;
+}
+
+.home-special .swiper-pagination-bullet-active {
+    background-color: #ff5100;
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .spin-slow {
+    animation: spin 10s linear infinite !important;
+  }
+}
+
+.section-container {
+  @apply w-[95%] md:w-[90%] xl:w-[1240px] 2xl:w-[1320px] mx-auto;
+}
+
+.b {
+  border: 2px solid;
+}
+
+.bb {
+  border: 2px solid red;
+}
+
+.background-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(255, 192, 203, 0.4) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+.background-gradient-count {
+  background: radial-gradient(
+    circle,
+    rgba(255, 231, 192, 0.482) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.background-gradient-footer {
+  background: radial-gradient(
+    circle,
+    rgba(246, 164, 57, 0.437) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+:root {
+  --primary: #fae4c7;
+  --secondary: #f1f1f1;
+}
+
+.background-gradient-blue {
+  background: radial-gradient(
+    circle,
+    rgba(247, 185, 41, 0.2) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
