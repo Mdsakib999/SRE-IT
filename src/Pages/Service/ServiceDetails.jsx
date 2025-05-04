@@ -24,6 +24,12 @@ const ServiceDetails = () => {
 
   return (
     <div className=" min-h-screen p-4 md:p-8 md:mt-20  py-32">
+      <div className="text-sm font-medium text-center text-orange-400 md:mt-6 ">
+        Pricing
+      </div>
+      <p className="text-xl md:text-2xl lg:text-4xl px-8 md:px-0 font-semibold md:font-bold mt-4 text-center">
+        Choose the perfect plan for your needs.
+      </p>
       <div className="mx-auto p-8">
         {/* Service Overview */}
 
