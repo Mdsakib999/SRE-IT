@@ -69,7 +69,8 @@ const Contact = () => {
                 Nasirabad Properties Road 1, House B5 <br /> Chittagong,
                 Bangladesh.
               </p>
-              <p className="text-lg mt-2 "> Al Muteena St, Dubai <br /> UAE.
+              <p className="text-lg mt-2 "> 
+                {/* Al Muteena St, Dubai <br /> UAE. */}
 
               {/* House - NE(B) 2/1, Road- 71, Gulshan-02, <br /> Dhaka, Bangladesh. */}
 

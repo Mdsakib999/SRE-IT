@@ -180,12 +180,12 @@ const ServiceSection = () => {
                 </div>
 
             </div>
-            <div className="section-container -mt-[120px] ">
-                <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4">
+            <div className="section-container -mt-[140px] ">
+                {/* <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4">
                     {
                         sliceServiceData.map((item, index) => (
                             <div key={index} className=" border bg-white shadow-xl p-8 rounded-lg hover:shadow-lg hover:shadow-orange-300">
-                                {/* <TbWorldDollar className="lg:text-6xl text-5xl text-orange-500" /> */}
+                                
                                 <item.logo className="lg:text-6xl text-5xl text-orange-500" />
                                 <p className="my-5  font-bold text-2xl lg:text-3xl">{item.title}</p>
                                 <p>
@@ -199,9 +199,9 @@ const ServiceSection = () => {
                             </div>
                         ))
                     }
-                </div>
+                </div> */}
 
-                <Link to={'/services'} className="p-4 flex flex-col items-end justify-end mr-1 mt-8">
+                <Link to={'/services'} className="p-4 flex flex-col items-center justify-end mr-1 mt-8">
                     <div className="cursor-pointer">
                         <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-orange-600 transition duration-300 ease-out border-2 border-orange-500 rounded-full shadow-md group">
                             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-orange-500 group-hover:translate-x-0 ease">
