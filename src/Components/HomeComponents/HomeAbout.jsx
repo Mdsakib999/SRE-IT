@@ -19,14 +19,14 @@ const HomeAbout = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4 ">
                     <img
-                      src={img1}
+                      src='https://www.theforage.com/blog/wp-content/uploads/2023/01/software-engineer-career-path-1024x768.jpg'
                       alt=""
                       className="w-full rounded-2xl rounded-tr-[200px]"
                     />
                   </div>
                   <div className="py-3 sm:py-4 ">
                     <img
-                      src={img2}
+                      src="https://www.theforage.com/blog/wp-content/uploads/2023/01/types-of-software-engineers-1024x768.jpg"
                       alt=""
                       className="w-full rounded-2xl rounded-bl-[160px]"
                     />
