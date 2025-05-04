@@ -8,36 +8,35 @@ const Service = () => {
   useDocumentTitle(`Service | SM IT Solution `);
   useEffect(() => {
     window.scrollTo({ top: 0 });
-  }, [])
+  }, []);
   return (
     <div className="">
       <div className="relative w-full md:h-[55vh] pt-32 text-center overflow-hidden ">
-
         {/* Gradient div */}
         <div className="background-gradient-blue w-56 h-56 md:w-96 md:h-80 absolute top-[-5%] right-[25%] md:top-[-1%] md:right-[-5%] rounded-full"></div>
 
         {/* Background Image */}
-        <p className="text-2xl md:text-2xl lg:text-4xl font-semibold">Our Services</p>
-            <p className="text-xl md:text-2xl lg:text-4xl px-8 md:px-0 font-semibold md:font-bold mt-4 md:mt-6">
-                <span className="text-orange-400">Your growth is our strategy, </span>
-                <span>your success is our goal.</span>
-            </p>
-            <p className="text-sm md:text-base mx-auto my-6 md:my-8 px-3 md:px-5 lg:w-[50%]">
-            Empowering your business with a team of seasoned professionals,
-            committed to delivering excellence through innovative thinking.
-            </p>
+        <p className="text-2xl md:text-2xl lg:text-4xl font-semibold">
+          Our Services
+        </p>
+        <p className="text-xl md:text-2xl lg:text-4xl px-8 md:px-0 font-semibold md:font-bold mt-4 md:mt-6">
+          <span className="text-orange-400">Your growth is our strategy, </span>
+          <span>your success is our goal.</span>
+        </p>
+        <p className="text-sm md:text-base mx-auto my-6 md:my-8 px-3 md:px-5 lg:w-[50%]">
+          Empowering your business with a team of seasoned professionals,
+          committed to delivering excellence through innovative thinking.
+        </p>
 
         {/* Centered Text */}
         <div className="relative flex justify-center flex-col items-center h-full">
           <h1 className="text-white text-2xl md:text-5xl font-bold text-center">
             Our Services
           </h1>
-          <p className="text-slate-300 mt-4 md:w-[50%] hover:text-white text-center px-3 md:px-0">
-            
-          </p>
+          <p className="text-slate-300 mt-4 md:w-[50%] hover:text-white text-center px-3 md:px-0"></p>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-20  px-6 pb-32 relative">
+      <div className="flex gap-x-8 gap-y-20  px-6 pb-32 relative">
         {/* Gradient div */}
         <div className="background-gradient-blue w-56 h-56 md:w-96 md:h-80 absolute bottom-[-2%] right-[25%] md:bottom-[-15%] md:right-[40%] rounded-full"></div>
 
