@@ -9,7 +9,7 @@ const Banner = () => {
     <>
       {/* h-[calc(100vh-100px)] */}
       <div
-        className="lg:min-h-[100vh] 2xl:min-h-[80vh] scale-x-[-1] pt-32 md:pt-20  relative overflow-hidden  xl:pr-5"
+        className="lg:min-h-[100vh] 2xl:min-h-[80vh] scale-x-[-1] pt-32 md:pt-20  relative overflow-hidden  xl:pr-5 xl:pb-20 mb-32 b bg-black text-white"
         style={{
           background: `url("") no-repeat center center / cover opacity-5`,
         }}
@@ -37,10 +37,10 @@ const Banner = () => {
               <div className="mt-8 flex  flex-col md:flex-row  justify-start md:justify-normal items-center space-x-6">
                 <button
                   type="submit"
-                  className="group mt-2 border-orange-400 hover:border-2 relative h-10 md:h-12 w-32 md:w-44 overflow-hidden rounded-ss-xl rounded-ee-xl font-bold md:text-lg shadow-lg shadow-orange-100 hover:shadow-lg"
+                  className="group mt-2 border-orange-400 hover:border-2 relative h-10 md:h-12 w-32 md:w-44 overflow-hidden rounded-ss-xl rounded-ee-xl font-bold md:text-lg  "
                 >
                   <div className="absolute inset-0 group-hover:w-3 bg-gradient-to-r from-orange-500 to-yellow-300 transition-all duration-[350ms] ease-out w-full"></div>
-                  <span className="relative group-hover:text-black text-white">
+                  <span className="relative  text-white">
                     Start Now
                   </span>
                 </button>
@@ -50,13 +50,13 @@ const Banner = () => {
                   <FaArrowRightLong className="text-orange-400"></FaArrowRightLong>
                 </p>
               </div >
-              <div className="mt-6 flex justify-center md:justify-normal gap-3">
-                <span className="flex text-sm font-semibold items-center ">
+              <div className="mt-8 flex justify-center md:justify-normal gap-3">
+                <span className="flex text-sm font-semibold items-center  gap-x-2">
                   {" "}
                   <HiMiniCheckBadge className="size-6  text-green-500" />{" "}
                   Customizable Workflow
                 </span>
-                <span className="flex text-sm font-semibold items-center">
+                <span className="flex text-sm font-semibold items-center gap-x-2">
                   {" "}
                   <HiMiniCheckBadge className="size-6  text-green-500" /> Time
                   Tracking
@@ -74,7 +74,7 @@ const Banner = () => {
 
 
 
-      <div className=" ">
+      {/* <div className="b ">
         <svg
           width="100%"
           height="10%"
@@ -110,7 +110,8 @@ const Banner = () => {
           </path>
         </svg>
 
-      </div>
+      </div> */}
+
     </>
   );
 };
