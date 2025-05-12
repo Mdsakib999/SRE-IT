@@ -46,14 +46,20 @@ const Augment = () => {
     visible: { opacity: 1, x: 0, transition: { duration: 0.9, delay: id / 10 } }
   })
   return (
-    <div className=" pt-10 pb-6 ">
+    <div className=" pt-10 pb-6 relative  overflow-hidden">
+
+       {/* Background Blobs */}
+      <div className="absolute hidden md:block top-0 left-0 w-[400px] h-[400px] bg-pink-200 rounded-full filter blur-[120px] opacity-50 z-0" />
+      <div className="absolute hidden md:block bottom-0 right-0 w-[400px] h-[400px] bg-orange-200 rounded-full filter blur-[120px] opacity-40 z-0" />
+
+
       <SectionTitle
         title={"Our Features"}
         description={"What Makes Us The Preferred Choice?"}
       />
       <div
 
-        className="max-w-7xl mx-auto pt-12 md:pb-20 px-4 md:px-3">
+        className="max-w-7xl mx-auto pt-12 md:pb-20 px-4 md:px-3 ">
         <div className="flex flex-col md:flex-row md:justify-between gap-x-6">
           {timelineData.map((step, index) => (
             <motion.div
@@ -61,7 +67,7 @@ const Augment = () => {
               whileInView="visible"
               variants={sectionVariants1(step.id)}
               viewport={{ once: false }}
-              key={index} className="flex flex-col items-center mb-10 md:mb-0 md:flex-1 py-4 px-2 rounded-tr-[40px] rounded-b-[35px] border shadow-lg shadow-orange-100 hover:-translate-y-2 duration-500 hover:shadow-md ">
+              key={index} className="flex flex-col items-center mb-10 md:mb-0 md:flex-1 py-4 px-2 rounded-tr-[40px] rounded-b-[35px] border shadow-lg shadow-orange-100 hover:-translate-y-2 duration-500 hover:shadow-md f bg-gray-0  bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-50">
               <div className={`w-12 h-12 rounded-full ${step.color} flex items-center justify-center text-white mb-4`}>
                 <span className="text-xl">{step.icon}</span>
               </div>

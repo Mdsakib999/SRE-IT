@@ -11,41 +11,8 @@ const HomeAbout = () => {
         <div className="container mx-auto">
           <div className="md:flex gap-x-6 items-center  justify-between -mx-4 ">
             {/* flex flex-wrap items-center  justify-between -mx-4 b */}
-            <div className="w-full px-4 lg:w-6/12">
-              <div className="flex items-center -mx-3 sm:-mx-4 relative ">
-                {/* Circle */}
-                <span className=" bg-orange-400 size-24 rounded-full bg-opacity-50 absolute md:top-[45%] left-[-6%] animate-pulse z-[-5]"></span>
 
-                <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="py-3 sm:py-4 ">
-                    <img
-                      src='https://www.theforage.com/blog/wp-content/uploads/2023/01/software-engineer-career-path-1024x768.jpg'
-                      alt=""
-                      className="w-full rounded-2xl rounded-tr-[200px]"
-                    />
-                  </div>
-                  <div className="py-3 sm:py-4 ">
-                    <img
-                      src="https://www.theforage.com/blog/wp-content/uploads/2023/01/types-of-software-engineers-1024x768.jpg"
-                      alt=""
-                      className="w-full rounded-2xl rounded-bl-[160px]"
-                    />
-                  </div>
-                </div>
-                <div className="w-full  xl:w-1/2  object-cover ">
-                  <div className="overflow-hidden relative  my-1  hover:rounded-2xl ">
-                    <img
-                      src="https://img.freepik.com/premium-photo/top-viewbusiness-team-making-tower-out-hands_252847-38238.jpg?w=740"
-                      alt=""
-                      className="overflow-hidden w-full rounded-2xl hover:scale-110 transition-all duration-500 hover:rounded-2xl "
-                    />
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12 ">
+            <div className="w-full px-4 lg:w-1/2 xl:w-6/12 ">
               <div className="mt-10 lg:mt-0">
                 <div className="relative   mb-4  text-primary font-bold ">
                   <p className="text-2xl  font-bold mt-7 ">
@@ -67,7 +34,7 @@ const HomeAbout = () => {
                   platforms and tailored digital tools, all aimed at fulfilling
                   your unique requirements. We go beyond merely providing services, we deliver customized solutions.
                 </p>
-                <p className="mb-8 text-base text-body-color ">
+                {/* <p className="mb-8 text-base text-body-color ">
                    Our team takes the time to comprehend your needs
                   and produces outcomes that surpass your expectations. With
                   services such as web development, digital marketing, and app
@@ -75,7 +42,7 @@ const HomeAbout = () => {
                   the ever-changing digital landscape. Let us advance together.
                   We are here to guide you on your digital journey and uncover
                   new possibilities for your organization.
-                </p>
+                </p> */}
 
                 {/* <button className="my-5 bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 text-white font-bold py-2 px-6 rounded-ss-xl rounded-ee-xl focus:outline-none focus:shadow-outline" >Get In Touch</button> */}
                 <Link to="/about">
@@ -89,6 +56,31 @@ const HomeAbout = () => {
                     </span>
                   </button>
                 </Link>
+              </div>
+            </div>
+
+             <div className="w-full px-4 lg:w-6/12">
+              <div className="flex items-center -mx-3 sm:-mx-4 relative ">
+                {/* Circle */}
+                <span className=" bg-orange-400 size-28 rounded-full bg-opacity-50 absolute md:top-[43%] left-[11%] animate-pulse z-[-5] "></span>
+
+                <div className="w-full px-3 sm:px-4 xl:w-[60%] mx-auto ">
+                  <div className="py-3 sm:py-4 ">
+                    <img
+                      src='https://www.theforage.com/blog/wp-content/uploads/2023/01/software-engineer-career-path-1024x768.jpg'
+                      alt=""
+                      className="w-full rounded-2xl rounded-tr-[200px]"
+                    />
+                  </div>
+                  <div className="py-3 sm:py-4 ">
+                    <img
+                      src="https://www.theforage.com/blog/wp-content/uploads/2023/01/types-of-software-engineers-1024x768.jpg"
+                      alt=""
+                      className="w-full rounded-2xl rounded-bl-[160px]"
+                    />
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>

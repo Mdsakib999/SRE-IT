@@ -34,12 +34,11 @@ const Home = () => {
 
             <HomeFAQ></HomeFAQ>
 
-
-
             {/* Out team member*/}
             {/* <OurTeam></OurTeam> */}
 
-            <Blog />
+            {/* <Blog /> */}
+            
             <Testimonials />
             {/* Contact */}
             <HomeContact></HomeContact>
