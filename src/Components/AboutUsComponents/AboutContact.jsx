@@ -1,4 +1,3 @@
-
 import { FaLightbulb } from "react-icons/fa"; // Importing icons for the lightbulbs
 import { BsQuestionCircle } from "react-icons/bs"; // Importing icons for the question marks
 import { Link } from "react-router-dom";
@@ -31,7 +30,8 @@ const AboutContact = () => {
       {/* Text and button */}
       <div className="text-center relative z-10">
         <p className="text-xl md:text-2xl lg:text-4xl font-bold text-gray-800">
-          Have Any Idea? <span className="text-orange-600">Let’s Turn it Into Reality.</span>
+          Have Any Idea?{" "}
+          <span className="text-orange-600">Let’s Turn it Into Reality.</span>
         </p>
         <Link
           to="/contact"
@@ -40,7 +40,6 @@ const AboutContact = () => {
           Contact Now
         </Link>
       </div>
-
     </div>
   );
 };

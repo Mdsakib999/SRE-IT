@@ -1,106 +1,120 @@
 /* eslint-disable react/no-unescaped-entities */
-// import React from "react";
-// import { FaLocationDot } from "react-icons/fa6";
-// import { MdEmail } from "react-icons/md";
-// import { BiSolidPhoneCall } from "react-icons/bi";
+import React from "react";
+import {
+  FaLocationDot,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const HomeContact = () => {
   return (
-    <div className="overflow-x-hidden relative">
-      {/* Gradient div */}
-      <div className="background-gradient hidden md:block w-72 h-72 absolute top-[10px] right-[-50px] rounded-full"></div>
+    <div className="relative overflow-hidden py-16">
+      {/* Decorative Blurred Background */}
+      <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-orange-300 to-amber-400 opacity-30 filter blur-3xl transform translate-x-1/2 -translate-y-1/3 rounded-full" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-300 to-indigo-400 opacity-30 filter blur-3xl transform -translate-x-1/2 translate-y-1/2 rounded-full" />
 
-      <div className="background-gradient-blue w-80 h-80 absolute top-[10%] left-[-35%] md:top-[10%] md:left-[-10%] rounded-full"></div>
-
-      <div className="section-container">
-        <div className="text-center mt-16 mb-10 ">
-          <p className="text-2xl lg:text-5xl font-bold animate-fade-up tracking-wide">
-            Have Any Project ? <span className="leading-snug text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-600 to-amber-400">Let’s Talk </span>
-          </p>
-          <p className="text-lg text-gray-500 pt-4  lg:w-[50%] w-[95%] m-auto ">
-            Have any idea or project, Let your dreams code true. From Seed to Success, We're Here to Help. To make the future brighter
-            and more connected, let's work together to bring out the best in your
-            company.
+      <div className="container mx-auto px-6 lg:px-24 relative z-10 ">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl lg:text-5xl font-bold tracking-tight">
+            Have Any Project?{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-orange-600 to-amber-400">
+              Let’s Talk
+            </span>
+          </h2>
+          <p className="mt-4 text-gray-600 lg:w-2/3 mx-auto">
+            Have an idea or project? Let your dreams become reality. From
+            concept to launch, we're here to help every step of the way.
           </p>
         </div>
-
-
-
-        {/* Address part */}
-        <div className=" lg:w-[90%] md:w-[95%] mx-auto flex flex-col md:flex-row items-center gap-7 lg:gap-8 justify-between my-16">
-          <div className="md:w-1/2  px-3 md:px-0">
-            <div className="text-2xl font-bold mb-6 text-center md:text-left leading-snug text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-600 to-amber-400">
-              -- Get In Touch --
-            </div>
-            <form action="#" className="w-full ">
-              <div className="flex flex-wrap -mx-2 mb-6">
-                <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    required
-                    className="w-full h-12 border border-gray-300 rounded px-4 focus:outline-none focus:border-orange-400 transition duration-300"
-                  />
-                </div>
-                <div className="w-full md:w-1/2 px-2">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                    className="w-full h-12 border border-gray-300 rounded px-4 focus:outline-none focus:border-orange-400 transition duration-300"
-                  />
-                </div>
-              </div>
-              <div className="mb-6">
+        <div className="flex flex-col mx-auto max-w-5xl md:flex-row bg-white shadow-xl rounded-2xl overflow-hidden ">
+          {/* Left: Contact Form */}
+          <div className="md:w-1/2 p-8 space-y-8 rounded-xl">
+            <h3 className="text-2xl font-semibold mb-4">Send Us a Message</h3>
+            <form className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
-                  placeholder="Subject"
+                  placeholder="Your Name"
                   required
-                  className="w-full h-12 border border-gray-300 rounded px-4 focus:outline-none  focus:border-orange-400 transition duration-300"
+                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  required
+                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
                 />
               </div>
-              <div className="mb-6">
-                <textarea
-                  cols="30"
-                  rows="10"
-                  placeholder="Write your Message..."
-                  required
-                  className="w-full h-32 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-orange-400  transition duration-300"
-                ></textarea>
-              </div>
-              <div className="flex items-center">
-                {/* <button
+              <input
+                type="text"
+                placeholder="Subject"
+                required
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+              />
+              <textarea
+                rows={5}
+                placeholder="Your Message"
+                required
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+              />
+              <button
                 type="submit"
-                className="group mt-2  border-2 border-orange-400 hover:border-none relative h-12 w-44 overflow-hidden rounded-ss-xl rounded-ee-xl font-bold text-lg shadow-lg shadow-orange-100 hover:shadow-lg"
+                className="relative inline-block px-6 py-3 font-semibold rounded-lg overflow-hidden group border-2 border-orange-400 hover:bg-gradient-to-r hover:from-orange-500 hover:to-yellow-300 hover:text-white transition"
               >
-                <div className="absolute inset-0 w-3 bg-gradient-to-r from-orange-500 to-yellow-300 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                <span className="relative text-black group-hover:text-white">
-                  Send Message
-                </span>
-              </button> */}
-
-                {/* Expriment btn */}
-                <button
-                  type="submit"
-                  className="group mt-2 border-orange-400 hover:border-2 relative h-12 w-44 overflow-hidden rounded-ss-xl rounded-ee-xl font-bold text-lg shadow-lg shadow-orange-100 hover:shadow-lg"
-                >
-                  <div className="absolute inset-0 group-hover:w-3 bg-gradient-to-r from-orange-500 to-yellow-300 transition-all duration-[350ms] ease-out w-full"></div>
-                  <span className="relative group-hover:text-black text-white">
-                    Send Message
-                  </span>
-                </button>
-              </div>
+                <span className="relative">Send Message</span>
+              </button>
             </form>
           </div>
-          <div className="lg:w-[50%] md:w-[60%] w-[92%] lg:h-[300px] md:h-[230px]  mt-5 md:mt-0">
-            <iframe
-              className="w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.3621125915265!2d91.81420930715574!3d22.361869233611696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9005629cff9%3A0x134782e81960acf0!2sSM%20IT%20SOLUTION!5e0!3m2!1sen!2sbd!4v1732142892387!5m2!1sen!2sbd"
-              // allowFullscreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
 
+          {/* Right: Contact Info & Social Links */}
+          <div className="md:w-1/2 p-8 bg-black relative">
+            <h3 className="text-2xl font-semibold text-orange-400 mb-6">
+              Contact Information
+            </h3>
+            <ul className="space-y-4 text-gray-300">
+              <li className="flex items-start gap-4 p-4 hover:bg-gray-800 hover:text-white  rounded-lg transition">
+                <FaLocationDot className="mt-1 text-2xl text-orange-400 hover:text-orange-500" />
+                <div className="text-sm leading-relaxed">
+                  <p className="font-medium ">SM IT Solution</p>
+                  <p>O.R. Nizam Road, Chattogram 4000, Bangladesh</p>
+                </div>
+              </li>
+              <li className="flex items-center gap-4 p-4 hover:bg-gray-800 hover:text-white rounded-lg transition">
+                <MdEmail className="text-2xl text-orange-400" />
+                <p>contact@smit.com</p>
+              </li>
+              <li className="flex items-center gap-4 p-4 hover:bg-gray-800 hover:text-white rounded-lg transition">
+                <BiSolidPhoneCall className="text-2xl text-orange-400" />
+                <p>+880 1700 123 456</p>
+              </li>
+            </ul>
+            {/* Social Icons Bottom Right */}
+            <div className="absolute bottom-6 right-6 flex items-center gap-6 text-gray-400">
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="hover:text-blue-500 transform hover:scale-110 transition"
+              >
+                <FaTwitter size={24} />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="hover:text-blue-700 transform hover:scale-110 transition"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="#"
+                aria-label="GitHub"
+                className="hover:text-gray-200 transform hover:scale-110 transition"
+              >
+                <FaGithub size={24} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
