@@ -13,7 +13,7 @@ const HomeContact = () => {
   return (
     <div className="relative overflow-hidden py-16">
       {/* Decorative Blurred Background */}
-      <div className="hidden md:block absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-orange-300 to-amber-400 opacity-30 filter blur-3xl transform translate-x-1/2 -translate-y-1/3 rounded-full" />
+      <div className="hidden md:block absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-orange-300 to-amber-400 opacity-30 filter blur-3xl transform translate-x-1/2 -translate-y-2/8 rounded-full" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-300 to-indigo-400 opacity-30 filter blur-3xl transform -translate-x-1/2 translate-y-1/2 rounded-full" />
 
       <div className="container mx-auto px-6 lg:px-24 relative z-10 ">
@@ -29,7 +29,7 @@ const HomeContact = () => {
             concept to launch, we're here to help every step of the way.
           </p>
         </div>
-        <div className="flex flex-col mx-auto max-w-5xl md:flex-row bg-white shadow-xl rounded-2xl overflow-hidden ">
+        <div className="flex flex-col mx-auto max-w-5xl md:flex-row bg-white shadow-xl rounded-2xl overflow-hidden border">
           {/* Left: Contact Form */}
           <div className="md:w-1/2 p-8 space-y-8 rounded-xl">
             <h3 className="text-2xl font-semibold mb-4">Send Us a Message</h3>
