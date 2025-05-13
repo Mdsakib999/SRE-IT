@@ -56,7 +56,7 @@ const MissionAndVision = () => (
           ({ id, title, highlight, description, image, imageFirst }) => (
             <div
               key={id}
-              className={`flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform hover:scale-[1.02] hover:shadow-lg p-4 border`}
+              className={`flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform hover:shadow-lg p-4 border`}
             >
               {imageFirst && (
                 <motion.div
