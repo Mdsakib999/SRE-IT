@@ -9,7 +9,7 @@ const Banner = () => {
     <>
       {/* h-[calc(100vh-100px)] */}
       <div
-        className="lg:min-h-[100vh] 2xl:min-h-[80vh] scale-x-[-1] pt-32 md:pt-20  relative overflow-hidden  xl:pr-5 xl:pb-20 mb-32 b bg-black text-white"
+        className="lg:min-h-[100vh] 2xl:min-h-[80vh] scale-x-[-1] pt-32 md:pt-20  relative overflow-hidden  xl:pr-5 xl:pb-20 mb-32  bg-black text-white"
         style={{
           background: `url("") no-repeat center center / cover opacity-5`,
         }}
@@ -74,7 +74,7 @@ const Banner = () => {
 
 
 
-      {/* <div className="b ">
+      {/* <div className=" ">
         <svg
           width="100%"
           height="10%"
