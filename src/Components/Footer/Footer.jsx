@@ -62,7 +62,6 @@ const Footer = () => {
               <p className="mt-3"> <Link to="/blog">Our Blog</Link></p>
               <p className="mt-3"> <Link to="/terms-and-conditions">Terms & Condition</Link></p>
               <p className="mt-3"><Link to="/privacy-policy">Privacy Policy</Link></p>
-              
               <p className="mt-3"> <Link to="/contact">Contact Us</Link></p>
             </div>
           </div>
@@ -74,11 +73,11 @@ const Footer = () => {
               <div className=" ">
                 <p className="flex items-center gap-x-2">
                   <FiMail className="text-xl"></FiMail>{" "}
-                  smitsolutionbd01@gmail.com
+                  sreitsolution@gmail.com
                 </p>
                 <p className="flex items-center gap-x-2 mt-2">
                   <BiPhoneCall className="text-xl"></BiPhoneCall> +88
-                  01711646758
+                  01700006758
                 </p>
                 
                 <p className="flex  gap-x-2 mt-2">

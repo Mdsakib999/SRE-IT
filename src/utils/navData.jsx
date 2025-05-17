@@ -24,28 +24,17 @@ export const navData = [
     //   },
     // ],
   },
+  
+  {
+    id: "2",
+    title: "About",
+    link: "/about",
+  },
   {
     id: "3",
     title: "Services",
     link: "/services",
     children: servicesChildren
-  },
-  {
-    id: "2",
-    title: "About",
-    link: "/about",
-    // children: [
-    //   {
-    //     id: "1",
-    //     title: "Home",
-    //     link: "/",
-    //   },
-    //   {
-    //     id: "3",
-    //     title: "About",
-    //     link: "/",
-    //   },
-    // ],
   },
   {
     id: "4",

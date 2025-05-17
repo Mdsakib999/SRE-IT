@@ -2,6 +2,7 @@ import { HiMiniCheckBadge } from "react-icons/hi2";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
 import animation from "./../../../public/NtA1Pn0jDI.json";
+import animation2 from "./../../../public/TR1OypZYX1.json";
 import Lottie from "lottie-react";
 
 const Banner = () => {
@@ -20,7 +21,10 @@ const Banner = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 place-items-center  h-full section-container scale-x-[-1] md:mt-4 ">
           <div className=" flex items-center ">
             <div className="text-center md:text-left  md:mt-10">
-              <p className="font-semibold md:text-xl text-2xl lg:text-2xl mb-6 font-mono">Are You Looking For Qualified IT Service Provider<span className="text-red-600">?</span></p>
+              <p className="font-semibold md:text-xl text-2xl lg:text-2xl mb-6 font-mono">
+                Are You Looking For Qualified IT Service Provider
+                <span className="text-red-600">?</span>
+              </p>
               <p className="text-xl md:text-2xl xl:text-3xl font-bold ">
                 <span className="text-xl md:text-3xl xl:text-4xl font-manrope  leading-snug text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-600 to-amber-400 uppercase ">
                   SRE IT Solution
@@ -40,16 +44,14 @@ const Banner = () => {
                   className="group mt-2 border-orange-400 hover:border-2 relative h-10 md:h-12 w-32 md:w-44 overflow-hidden rounded-ss-xl rounded-ee-xl font-bold md:text-lg  "
                 >
                   <div className="absolute inset-0 group-hover:w-3 bg-gradient-to-r from-orange-500 to-yellow-300 transition-all duration-[350ms] ease-out w-full"></div>
-                  <span className="relative  text-white">
-                    Start Now
-                  </span>
+                  <span className="relative  text-white">Start Now</span>
                 </button>
 
                 <p className="flex items-center text-base md:text-xl gap-2 font-bold cursor-pointer mt-5 md:mt-0">
                   Learn More{" "}
                   <FaArrowRightLong className="text-orange-400"></FaArrowRightLong>
                 </p>
-              </div >
+              </div>
               <div className="mt-8 flex justify-center md:justify-normal gap-3">
                 <span className="flex text-sm font-semibold items-center  gap-x-2">
                   {" "}
@@ -62,17 +64,17 @@ const Banner = () => {
                   Tracking
                 </span>
               </div>
-            </div >
-          </div >
+            </div>
+          </div>
           <div className="relative ">
             {/* here include image */}
-            <Lottie animationData={animation} className=" h-fit" />
-            <span className="absolute right-[10%] top-[15%] animate-bounce"><FaCode className="text-4xl text-orange-500"></FaCode></span>
+            <Lottie animationData={animation2} className=" h-fit" />
+            <span className="absolute right-[10%] top-[15%] animate-bounce">
+              <FaCode className="text-4xl text-orange-500"></FaCode>
+            </span>
           </div>
         </div>
-      </div >
-
-
+      </div>
 
       {/* <div className=" ">
         <svg
@@ -111,7 +113,6 @@ const Banner = () => {
         </svg>
 
       </div> */}
-
     </>
   );
 };

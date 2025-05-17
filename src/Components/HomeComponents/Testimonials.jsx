@@ -11,7 +11,7 @@ import { testimonials } from "../../utils/tastimonials";
 
 const Testimonials = () => {
   return (
-    <div className=" py-10  bg-gradient-to-br from-orange-200 via-blue-200 to-purple-100 mx-4 rounded-2xl">
+    <div className=" py-10  bg-gradient-to-br from-orange-50 via-blue-50 to-purple-50 mx-2  rounded-2xl">
       <div className="section-container  ">
         <SectionTitle
           title={"Voices of Trust"}

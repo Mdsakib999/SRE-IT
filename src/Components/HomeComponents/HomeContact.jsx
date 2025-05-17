@@ -5,6 +5,9 @@ import {
   FaTwitter,
   FaLinkedin,
   FaGithub,
+  FaSquareFacebook,
+  FaSquareInstagram,
+  FaInstagram,
 } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BiSolidPhoneCall } from "react-icons/bi";
@@ -39,33 +42,33 @@ const HomeContact = () => {
                   type="text"
                   placeholder="Your Name"
                   required
-                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-none focus:ring-1 focus:ring-orange-300 transition"
                 />
                 <input
                   type="email"
                   placeholder="Your Email"
                   required
-                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                  className="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-none focus:ring-1 focus:ring-orange-300 transition"
                 />
               </div>
               <input
                 type="text"
                 placeholder="Subject"
                 required
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-none focus:ring-1 focus:ring-orange-300 transition"
               />
               <textarea
                 rows={5}
                 placeholder="Your Message"
                 required
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-none focus:ring-1 focus:ring-orange-300 transition"
               />
               <button
-                type="submit"
-                className="relative inline-block px-6 py-3 font-semibold rounded-lg overflow-hidden group border-2 border-orange-400 hover:bg-gradient-to-r hover:from-orange-500 hover:to-yellow-300 hover:text-white transition"
-              >
-                <span className="relative">Send Message</span>
-              </button>
+  type="submit"
+  className="relative inline-block px-6 py-3 font-semibold rounded-lg overflow-hidden group border-2 border-orange-400 transition-colors duration-300 ease-in-out hover:bg-gradient-to-r hover:from-orange-500 hover:to-yellow-300 hover:border-white hover:text-white"
+>
+  <span className="relative">Send Message</span>
+</button>
             </form>
           </div>
 
@@ -78,41 +81,51 @@ const HomeContact = () => {
               <li className="flex items-start gap-4 p-4 hover:bg-gray-800 hover:text-white  rounded-lg transition">
                 <FaLocationDot className="mt-1 text-2xl text-orange-400 hover:text-orange-500" />
                 <div className="text-sm leading-relaxed">
-                  <p className="font-medium ">SM IT Solution</p>
-                  <p>O.R. Nizam Road, Chattogram 4000, Bangladesh</p>
+                  <p className="font-medium ">SRE IT Solution</p>
+                  <p>Nasirabad Properties Road 1 </p>
+                  <p>Chittagong, Bangladesh.</p>
                 </div>
               </li>
               <li className="flex items-center gap-4 p-4 hover:bg-gray-800 hover:text-white rounded-lg transition">
                 <MdEmail className="text-2xl text-orange-400" />
-                <p>contact@smit.com</p>
+                <p>contact@sreit.com</p>
               </li>
               <li className="flex items-center gap-4 p-4 hover:bg-gray-800 hover:text-white rounded-lg transition">
                 <BiSolidPhoneCall className="text-2xl text-orange-400" />
-                <p>+880 1700 123 456</p>
+                <p>+880 1700 000 456</p>
               </li>
             </ul>
             {/* Social Icons Bottom Right */}
-            <div className="absolute bottom-6 right-6 flex items-center gap-6 text-gray-400">
+            <div className="absolute bottom-6 right-6 flex items-center gap-6 ">
+
               <a
                 href="#"
                 aria-label="Twitter"
-                className="hover:text-blue-500 transform hover:scale-110 transition"
+                className="text-blue-500 transform hover:scale-110 transition  bg-whit"
+              >
+                <FaSquareFacebook size={24} />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="text-blue-500 transform hover:scale-110 transition"
               >
                 <FaTwitter size={24} />
               </a>
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="hover:text-blue-700 transform hover:scale-110 transition"
+                className="text-blue-500  transform hover:scale-110 transition"
               >
                 <FaLinkedin size={24} />
               </a>
               <a
                 href="#"
                 aria-label="GitHub"
-                className="hover:text-gray-200 transform hover:scale-110 transition"
+                className="text-pink-700 transform hover:scale-110 transition"
               >
-                <FaGithub size={24} />
+                <FaInstagram size={24} />
               </a>
             </div>
           </div>
